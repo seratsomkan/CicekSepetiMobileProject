@@ -2,6 +2,10 @@ package runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -12,12 +16,17 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports/regression.html"},
         features = "src/test/resources/Features",
         glue="stepDefinitions",
-        tags = "",
+        tags = "@LoginTest",
         dryRun = false
 
 )
 
 public class Runner {
+    private static final Logger logger = LogManager.getLogger(Runner.class);
 
-
+    @BeforeClass
+    public static void setup() {
+        // Test çalışmaya başlamadan önce loglama yapılır
+        logger.info("Cucumber Test Runner başlatılıyor...");
+    }
 }

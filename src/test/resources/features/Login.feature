@@ -1,3 +1,4 @@
+@LoginTest
 Feature: Kullanıcı Giriş İşlemi
 
   Background:
