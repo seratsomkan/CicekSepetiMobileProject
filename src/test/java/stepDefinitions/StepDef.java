@@ -11,7 +11,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class E2EStepDef {
+public class StepDef {
 
     HomePage homePage = new HomePage();
     CategoryMenuPage categoryMenuPage = new CategoryMenuPage();
@@ -23,7 +23,7 @@ public class E2EStepDef {
     ProductPage productPage = new ProductPage();
     MyCartPage myCartPage = new MyCartPage();
 
-    Logger logger = LogManager.getLogger(E2EStepDef.class);
+    Logger logger = LogManager.getLogger(StepDef.class);
 
     @Given("kullanici uygulamaya girer")
     public void kullanici_uygulamaya_girer() {
