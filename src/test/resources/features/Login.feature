@@ -3,7 +3,7 @@ Feature: Kullanıcı Giriş İşlemi
 
   Background:
     Given kullanici uygulamaya girer
-    And "çiçek" islemini secer
+    And "hediye & ekstra" islemini secer
     When alt menuden "hesabım" iconuna tiklar
     And "Üye Girişi" butonuna tiklar
 

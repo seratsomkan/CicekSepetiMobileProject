@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
+<Configuration status="INFO">
     <Appenders>
-        <Console name="Console" target="SYSTEM_OUT">
+        <!-- Dosya appender -->
+        <File name="FileLogger" fileName="logs/test-log.log" append="true">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
-        </Console>
-        <File name="FileLogger" fileName="logs/appium-test.log" append="true">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level - %msg%n"/>
         </File>
+
+        <!-- Konsol appender -->
+        <Console name="ConsoleLogger" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n"/>
+        </Console>
     </Appenders>
+
     <Loggers>
+        <!-- Tüm log seviyelerini al -->
         <Root level="info">
-            <AppenderRef ref="Console"/>
             <AppenderRef ref="FileLogger"/>
+            <AppenderRef ref="ConsoleLogger"/>
         </Root>
     </Loggers>
 </Configuration>
