@@ -26,8 +26,6 @@ public class StepDef {
 
     @Given("kullanici uygulamaya girer")
     public void kullanici_uygulamaya_girer() {
-        logger.info("Kullanıcı uygulamaya giriyor...");
-        Driver.getAppiumDriver();
         Allure.step("Kullanıcı uygulamaya giriş yaptı..");
     }
     @Given("{string} islemini secer")
