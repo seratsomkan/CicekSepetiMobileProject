@@ -2,8 +2,6 @@ package runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -18,7 +16,6 @@ import org.junit.runner.RunWith;
         dryRun = false
 )
 
-public class Runner {
-    private static final Logger logger = LogManager.getLogger(Runner.class);
+public class RunnerTest {
 
 }
