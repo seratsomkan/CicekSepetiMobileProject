@@ -24,9 +24,4 @@ import org.junit.runner.RunWith;
 public class Runner {
     private static final Logger logger = LogManager.getLogger(Runner.class);
 
-    @BeforeClass
-    public static void setup() {
-        // Test çalışmaya başlamadan önce loglama yapılır
-        logger.info("Cucumber Test Runner başlatılıyor...");
-    }
 }
