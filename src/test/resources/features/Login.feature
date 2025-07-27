@@ -7,11 +7,11 @@ Feature: Kullanıcı Giriş İşlemi
     When alt menuden "hesabım" iconuna tiklar
     And "Üye Girişi" butonuna tiklar
 
-  @LoginTest
   Scenario: Geçerli mail ve şifre bilgileri ile başarılı giriş yapılır
     When test datadaki 1.sheetteki "gecerli" mail ve "gecerli" sifre ile hesaba giris yapilir
     Then kullanici giris isleminin "basarili" oldugunu dogrular
 
+  @LoginTest
   Scenario: Geçerli mail, geçersiz şifre bilgileri ile giriş yapamaz
     When test datadaki 1.sheetteki "gecerli" mail ve "gecersiz" sifre ile hesaba giris yapilir
     Then kullanici giris isleminin "basarisiz" oldugunu dogrular
