@@ -6,7 +6,7 @@ Feature: Ürün filtreleme ve sepete ekleme işlemi
     When alt menuden "hesabım" iconuna tiklar
     And "Üye Girişi" butonuna tiklar
     When test datadaki 1.sheetteki "gecerli" mail ve "gecerli" sifre ile hesaba giris yapilir
-
+  @E2E
   Scenario: Filtreleme ile ürün seçimi yapılmalı, sepete eklenmeli ve ürün bilgileri doğrulanmalıdır
     When alt menuden "kategoriler" iconuna tiklar
     And sayfadaki "Doğum Günü" sekmesinden, "Kadına Hediye" sayfasina gider
