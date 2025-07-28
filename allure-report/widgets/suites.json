@@ -1,1 +1,1 @@
-{"total":0,"items":[]}
+{"total":2,"items":[{"uid":"a389202c892e98862c54735aeb4a84c3","name":"Kullanıcı Giriş İşlemi","statistic":{"failed":0,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":4}},{"uid":"b65fec839548995019e47a10089ceff0","name":"Ürün filtreleme ve sepete ekleme işlemi","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

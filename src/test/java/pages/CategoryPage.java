@@ -101,7 +101,7 @@ public class CategoryPage {
         String firstProductPriceStr = currentPriceList.get(0).getText().replaceAll("\\D","");
         categoryPageFirstProductPrice =  Integer.parseInt(firstProductPriceStr.substring(0,firstProductPriceStr.length()-2));
 
-        String lastProductPriceStr = currentPriceList.get(3).getText().replaceAll("\\D","");
+        String lastProductPriceStr = currentPriceList.get(currentPriceList.size()-1).getText().replaceAll("\\D","");
         int lastProductPrice =  Integer.parseInt(lastProductPriceStr.substring(0,lastProductPriceStr.length()-2));
 
         logger.info("Ürün fiyatlarının belirlenen aralıkta olduğu doğrulanıyor...");

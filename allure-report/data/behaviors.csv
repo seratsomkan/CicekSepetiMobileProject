@@ -1,0 +1,6 @@
+"BROKEN","EPİC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","","0","Kullanıcı Giriş İşlemi","1","0","Geçersiz mail, geçerli şifre bilgileri ile giriş yapamaz","0"
+"0","","0","Kullanıcı Giriş İşlemi","1","0","Geçerli mail ve şifre bilgileri ile başarılı giriş yapılır","0"
+"0","","0","Kullanıcı Giriş İşlemi","1","0","Geçerli mail, geçersiz şifre bilgileri ile giriş yapamaz","0"
+"0","","0","Ürün filtreleme ve sepete ekleme işlemi","1","0","Filtreleme ile ürün seçimi yapılmalı, sepete eklenmeli ve ürün bilgileri doğrulanmalıdır","0"
+"0","","0","Kullanıcı Giriş İşlemi","1","0","Geçersiz mail, geçersiz şifre bilgileri ile giriş yapamaz","0"
