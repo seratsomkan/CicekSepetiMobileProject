@@ -15,7 +15,7 @@ import utilities.RenameAllureJsonFiles;
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
         features = "src/test/resources/Features",
         glue="stepDefinitions",
-        tags = "@E2E",
+        tags = "",
         dryRun = false
 )
 
