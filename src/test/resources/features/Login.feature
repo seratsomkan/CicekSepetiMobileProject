@@ -6,7 +6,7 @@ Feature: Kullanıcı Giriş İşlemi
     And "hediye & ekstra" islemini secer
     When alt menuden "hesabım" iconuna tiklar
     And "Üye Girişi" butonuna tiklar
-
+  @login
   Scenario: Geçerli mail ve şifre bilgileri ile başarılı giriş yapılır
     When test datadaki 1.sheetteki "gecerli" mail ve "gecerli" sifre ile hesaba giris yapilir
     Then kullanici giris isleminin "basarili" oldugunu dogrular

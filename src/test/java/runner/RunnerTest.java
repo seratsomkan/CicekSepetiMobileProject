@@ -15,7 +15,7 @@ import utilities.RenameAllureJsonFiles;
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
         features = "src/test/resources/Features",
         glue="stepDefinitions",
-        tags = "",
+        tags = "@login",
         dryRun = false
 )
 
@@ -27,6 +27,6 @@ public class RunnerTest {
 
     @AfterClass
     public static void tearDown() {
-        RenameAllureJsonFiles.renameOnlyNewFiles("E2E");
+        RenameAllureJsonFiles.renameOnlyNewFiles("login");
     }
 }
